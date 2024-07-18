@@ -17,8 +17,8 @@ const steps = [
 ]
 
 const Toggle = ({ shouldBeOpen, onClickButtonToggle }) => (
-    <div className='container-close'>
-        <button onClick={onClickButtonToggle} className='close'>
+    <div className='container-toggle'>
+        <button onClick={onClickButtonToggle} className='toggle'>
             <span>{shouldBeOpen ? "Fechar" : "Abrir"}</span>
         </button>
     </div>
@@ -59,7 +59,10 @@ const Steps = () => {
 
     return (
         <section className='steps'>
-            <Toggle shouldBeOpen={shouldBeOpen} onClickButtonToggle={handleClickButtonToggle} />
+            <Toggle
+                shouldBeOpen={shouldBeOpen}
+                onClickButtonToggle={handleClickButtonToggle}
+            />
 
             <StepsComp
                 shouldBeOpen={shouldBeOpen}
@@ -67,10 +70,8 @@ const Steps = () => {
                 onClickButtonPrevious={handleClickButtonPrevious}
                 onClickButtonNext={handleClickButtonNext}
             />
-
-
-
         </section>
     )
 }
+
 export { Steps }
