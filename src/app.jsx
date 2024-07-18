@@ -9,15 +9,14 @@ const App = () => {
 
     return (
         <>
-            
-            <DateCounter />
-            <Steps />
-            <FlashCards />
-            <CardDev /> 
-            <Accordion />
-           
 
-            <Burger />
+            {/* <DateCounter /> */}
+
+            <Steps />
+            {/* <FlashCards />
+            <CardDev />
+            <Accordion />
+            <Burger /> */}
         </>
     )
 }
